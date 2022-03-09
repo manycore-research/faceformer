@@ -1,0 +1,27 @@
+# Each face as a seq
+
+# dataset generation method:  
+# python dataset/prepare_data.py ... --random_camera --focus 0
+
+model_class: 'SurfaceFormer_Parallel'
+dataset_class: 'ABCDataset_Parallel'
+root_dir: "test_set/ours"
+
+batch_size_train: 4
+batch_size_valid: 20
+
+trainer:
+  name: 'SurfaceFormer'
+  version: 'ours'
+  lr: 1.0e-4
+  num_gpus: [0]
+  
+model:
+  num_lines: 216
+  max_num_faces: 42
+  max_face_length: 37
+  token:
+    PAD: 0
+    face_type_offset: 1
+    len: 4
+  

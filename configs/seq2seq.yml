@@ -1,0 +1,19 @@
+# All faces as a seq, cylinder face cut into 2
+
+# dataset generation method: 
+#   - prepare_data.py ... --combine_coedge --order_by_position --random_camera --focus 0
+
+root_dir: "test_set/seq2seq"
+trainer:
+  name: 'SurfaceFormer'
+  version: 'seq2seq'
+  num_gpus: [0]
+
+model:
+  num_lines: 110
+  label_seq_length: 259
+  max_num_faces: 42
+
+post_process:
+  is_coedge: False
+  

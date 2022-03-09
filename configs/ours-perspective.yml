@@ -1,0 +1,26 @@
+# Each face as a seq in perspective view
+
+# dataset generation method:  
+# python dataset/prepare_data.py ... --random_camera
+
+model_class: 'SurfaceFormer_Parallel'
+dataset_class: 'ABCDataset_Parallel'
+root_dir: "test_set/ours-perspective"
+
+batch_size_train: 4
+batch_size_valid: 20
+
+trainer:
+  name: 'SurfaceFormer'
+  version: 'ours-perspective'
+  lr: 1.0e-4
+  num_gpus: [0]
+  
+model:
+  num_lines: 202
+  max_num_faces: 42
+  max_face_length: 38
+  token:
+    PAD: 0
+    face_type_offset: 1
+    len: 4
