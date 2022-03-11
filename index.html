@@ -25,6 +25,21 @@
 		gtag('config', 'G-E2B3RJ0QKX');
 	</script>
 
+	<script type="text/javascript">
+		function show(name) {
+			document.getElementById('demo').innerHTML = "<div class='column'><img class='input-img' src='resources/test/img/"+name+".png'></img></div><div class='column'><model-viewer src='resources/test/ours/"+name+".glb' camera-controls auto-rotate shadow-intensity='1'></model-viewer></div><div class='column'><model-viewer src='resources/test/gt/"+name+".glb' camera-controls auto-rotate shadow-intensity='1'></model-viewer></div>";
+		}
+
+		fetch('resources/test/test.txt').then(res => res.text()).then(text => {
+			return text.split('\n').filter(v => v != '')
+		}).then(list => {
+			console.log(list)
+			const index = Math.floor(Math.random() * list.length)
+			show(list[index])
+		})
+
+	</script>
+
 	<!-- Model Viewer -->
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
@@ -81,38 +96,7 @@
 					<div class='header'>Ground truth</div>
 				</div>
 			</div>
-			<div class='row'>
-				<div class='column'>
-					<img class='input-img' src='resources/examples/img/00002532.png'></img>
-				</div>
-				<div class='column'>
-					<model-viewer src="resources/examples/ours/00002532.glb" camera-controls auto-rotate shadow-intensity="1"></model-viewer>
-				</div>
-				<div class='column'>
-					<model-viewer src="resources/examples/gt/00002532.glb" camera-controls auto-rotate shadow-intensity="1"></model-viewer>
-				</div>
-			</div>
-			<div class='row'>
-				<div class='column'>
-					<img class='input-img' src='resources/examples/img/00005498.png'></img>
-				</div>
-				<div class='column'>
-					<model-viewer src="resources/examples/ours/00005498.glb" camera-controls auto-rotate shadow-intensity="1"></model-viewer>
-				</div>
-				<div class='column'>
-					<model-viewer src="resources/examples/gt/00005498.glb" camera-controls auto-rotate shadow-intensity="1"></model-viewer>
-				</div>
-			</div>
-			<div class='row'>
-				<div class='column'>
-					<img class='input-img' src='resources/examples/img/00024201.png'></img>
-				</div>
-				<div class='column'>
-					<model-viewer src="resources/examples/ours/00024201.glb" camera-controls auto-rotate shadow-intensity="1"></model-viewer>
-				</div>
-				<div class='column'>
-					<model-viewer src="resources/examples/gt/00024201.glb" camera-controls auto-rotate shadow-intensity="1"></model-viewer>
-				</div>
+			<div class='row' id="demo">
 			</div>
   		</div>
   	</section>
