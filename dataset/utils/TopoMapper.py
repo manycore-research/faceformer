@@ -6,7 +6,7 @@ from OCC.Core.ShapeFix import ShapeFix_ShapeTolerance
 from dataset.utils.projection_utils import d3_to_d2, project_shapes, discretize_compound, project_points
 from dataset.utils.Edge import Edge
 from dataset.utils.Face import Face
-from surfaceformer.utils import flatten_list
+from faceformer.utils import flatten_list
 
 import numpy as np
 
