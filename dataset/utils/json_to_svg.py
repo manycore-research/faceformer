@@ -2,7 +2,7 @@ import argparse
 import json
 import os
 from functools import partial
-from surfaceformer.utils import flatten_list
+from faceformer.utils import flatten_list
 
 import numpy as np
 import svgwrite

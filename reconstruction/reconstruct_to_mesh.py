@@ -18,7 +18,7 @@ from OCC.Core.ShapeFix import ShapeFix_Face
 from OCC.Core.TColgp import TColgp_HArray1OfPnt
 from OCC.Core.Tesselator import ShapeTesselator
 from OCC.Core.TopoDS import TopoDS_Compound
-from surfaceformer.utils import flatten_list
+from faceformer.utils import flatten_list
 from tqdm.contrib.concurrent import process_map
 
 from reconstruction.utils import (construct_connected_cycle,

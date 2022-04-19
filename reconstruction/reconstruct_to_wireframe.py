@@ -7,7 +7,7 @@ from functools import partial
 import cvxpy as cp
 import numpy as np
 import open3d as o3d
-from surfaceformer.utils import flatten_list
+from faceformer.utils import flatten_list
 from tqdm.contrib.concurrent import process_map
 
 from reconstruction.reconstruction_utils import (construct_connected_cylinder,

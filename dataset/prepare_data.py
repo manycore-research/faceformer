@@ -24,7 +24,7 @@ from dataset.utils.read_step_file import read_step_file
 from dataset.utils.TopoMapper import TopoMapper
 
 from dataset.tests.check_faces_enclosed import is_face_enclosed
-from surfaceformer.utils import flatten_list
+from faceformer.utils import flatten_list
 from dataset.utils.projection_utils import generate_random_camera_pos
 
 def get_boundingbox(shapes, tol=1e-6):
