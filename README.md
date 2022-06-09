@@ -1,20 +1,28 @@
-# faceformer
+<div align="center">
 
-<p align="center">
-  <img src="assets/teaser.gif">
-</p>
+<h1>Neural Face Identification in a 2D Wireframe Projection of a Manifold Object</h1>
 
-## Paper
+<h3>
+  <a href='https://jason-khan.github.io/' target='_blank'>Kehan Wang</a>
+  ·
+  <a href='https://bertjiazheng.github.io/' target='_blank'>Jia Zheng</a>
+  ·
+  <a href='https://zihan-z.github.io/' target='_blank'>Zihan Zhou</a>
+</h3>
 
-**Neural Face Identification in a 2D Wireframe Projection of a Manifold Object**
+<h3>
+  IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022
+</h3>
 
-[Kehan Wang](https://jason-khan.github.io/),
-[Jia Zheng](https://bertjiazheng.github.io/),
-[Zihan Zhou](https://zihan-z.github.io/)
+<h3>
+  <a href="https://manycore-research.github.io/faceformer/" target='_blank'>[Project Page]</a>
+  ·
+  <a href="https://arxiv.org/abs/2203.04229" target='_blank'>[Paper]</a>
+</h3>
 
-IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022
+<img src="assets/teaser.gif">
 
-[[arXiv](https://arxiv.org/abs/2203.04229)] [[Supp. Material](https://drive.google.com/file/d/1dy_4-H86NGziDqbYIYIrFnZDRBY0gu5T/view)]
+</div>
 
 ## Requirements
 
