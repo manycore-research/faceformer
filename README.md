@@ -62,6 +62,10 @@ Reconstructed wireframes (*.ply*) or meshes (*obj*) files will be saved to `ligh
 python main.py --config_file configs/{MODEL_NAME}.yml
 ```
 
+## Acknowledgement
+
+The work was done during Kehan Wang's internship at Manycore Tech Inc.
+
 ## Citation
 
 Please cite `faceformer` in your publications if it helps your research:
