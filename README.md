@@ -17,7 +17,9 @@
 <h3>
   <a href="https://manycore-research.github.io/faceformer/" target='_blank'>[Project Page]</a>
   ·
-  <a href="https://arxiv.org/abs/2203.04229" target='_blank'>[Paper]</a>
+  <a href="https://arxiv.org/abs/2203.04229" target='_blank'>[arXiv]</a>
+  ·
+  <a href="https://openaccess.thecvf.com/content/CVPR2022/supplemental/Wang_Neural_Face_Identification_CVPR_2022_supplemental.pdf" target='_blank'>[Supp. Material]</a>
 </h3>
 
 <img src="assets/teaser.gif">
