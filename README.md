@@ -15,7 +15,7 @@
 </h4>
 
 <h4>
-  <a href="https://manycore-research.github.io/faceformer/" target='_blank'>[www]</a>
+  <a href="https://manycore-research.github.io/faceformer/" target='_blank'>[website]</a>
   ·
   <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_Neural_Face_Identification_in_a_2D_Wireframe_Projection_of_a_CVPR_2022_paper.pdf" target='_blank'>[paper]</a>
   ·
