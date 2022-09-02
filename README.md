@@ -2,25 +2,27 @@
 
 <h1>Neural Face Identification in a 2D Wireframe Projection of a Manifold Object</h1>
 
-<h3>
+<h4>
   <a href='https://jason-khan.github.io/' target='_blank'>Kehan Wang</a>
   ·
   <a href='https://bertjiazheng.github.io/' target='_blank'>Jia Zheng</a>
   ·
   <a href='https://zihan-z.github.io/' target='_blank'>Zihan Zhou</a>
-</h3>
+</h4>
 
-<h3>
+<h4>
   IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022
-</h3>
+</h4>
 
-<h3>
-  <a href="https://manycore-research.github.io/faceformer/" target='_blank'>[Project Page]</a>
+<h4>
+  <a href="https://manycore-research.github.io/faceformer/" target='_blank'>[www]</a>
+  ·
+  <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_Neural_Face_Identification_in_a_2D_Wireframe_Projection_of_a_CVPR_2022_paper.pdf" target='_blank'>[paper]</a>
+  ·
+  <a href="https://openaccess.thecvf.com/content/CVPR2022/supplemental/Wang_Neural_Face_Identification_CVPR_2022_supplemental.pdf" target='_blank'>[supp]</a>
   ·
   <a href="https://arxiv.org/abs/2203.04229" target='_blank'>[arXiv]</a>
-  ·
-  <a href="https://openaccess.thecvf.com/content/CVPR2022/supplemental/Wang_Neural_Face_Identification_CVPR_2022_supplemental.pdf" target='_blank'>[Supp. Material]</a>
-</h3>
+</h4>
 
 <img src="assets/teaser.gif">
 
