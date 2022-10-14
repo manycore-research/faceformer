@@ -62,20 +62,3 @@ python main.py --config_file configs/{MODEL_NAME}.yml
 ## Acknowledgement
 
 The work was done during Kehan Wang's internship at Manycore Tech Inc.
-
-## Citation
-
-Please cite `faceformer` in your publications if it helps your research:
-
-```bibtex
-@inproceedings{faceformer,
-  title     = {Neural Face Identification in a 2D Wireframe Projection of a Manifold Object},
-  author    = {Kehan Wang and Jia Zheng and Zihan Zhou},
-  booktitle = {Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year      = {2022}
-}
-```
-
-## License
-
-[MIT license](LICENSE)
