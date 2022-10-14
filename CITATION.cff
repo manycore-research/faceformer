@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+preferred-citation:
+  type: conference-paper
+  collection-type: proceedings
+  title: "Neural Face Identification in a 2D Wireframe Projection of a Manifold Object"
+  authors:
+    - family-names: Wang
+      given-names: Kehan
+    - family-names: Zheng
+      given-names: Jia
+    - family-names: Zhou
+      given-names: Zihan
+  collection-title: "Proceedings of IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+  start: 1622
+  end: 1631
+  year: 2022
