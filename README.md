@@ -59,6 +59,49 @@ Reconstructed wireframes (*.ply*) or meshes (*obj*) files will be saved to `ligh
 python main.py --config_file configs/{MODEL_NAME}.yml
 ```
 
+## FAQs
+
+- *Why does root_dir not update when I change it in configs/ours.yml?*  
+Seems like when pytorch_lightning loads the checkpoint in, it also uses the old root dir which we trained the model with.
+To fix: Please uncomment line 25 of faceformer/trainer.py and set the desired root_dir there.
+
+- *How should I use the downloaded json dataset?*  
+Assuming we have downloaded *data_ours.tar.gz* and unzipped it to the same directory as [split_json.py](https://drive.google.com/drive/folders/1ynMD02E5FWlCPmQkWyjHdq4Zhe8DIXE2) in the outer-most directory, we now have:
+
+  ```
+  root
+  ├── main.py
+  ├── split_json.py
+  ├── ours
+  │   └── 00000050.json
+  │   └── 00000052.json
+  │   └── ...
+  ```
+  
+  Run `python split_json.py` and it should prepare the dataset into the following:
+  
+  ```
+  root
+  ├── main.py
+  ├── split_json.py
+  ├── ours
+  │   └── test.txt
+  │   └── train.txt
+  │   └── valid.txt
+  │   └── json
+  │       └── 00000050.json
+  │       └── 00000052.json
+  │       └── ...
+  ```
+  
+  With this, set the root_dir to "ours" at line 25 of faceformer/trainer.py, and 
+  ```
+  python main.py --config-file configs/ours.yml --test_ckpt trained_models/ours.ckpt
+  ```
+  should work.
+
+
+
 ## Acknowledgement
 
 The work was done during Kehan Wang's internship at Manycore Tech Inc.
