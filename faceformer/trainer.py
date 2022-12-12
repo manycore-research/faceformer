@@ -22,6 +22,7 @@ class Trainer(pl.LightningModule):
         self.validation_num = 0
         self.time_count = 0
         self.total_time = 0
+        # self.hparams.root_dir = "ours"
 
     def forward(self, batch):
         return self.model(batch)
